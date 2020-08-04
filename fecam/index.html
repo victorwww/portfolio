@@ -1,0 +1,444 @@
+<html>
+<head>
+    <meta charset="UTF-8" />
+        <style>
+                body {
+            padding: 30px;
+            font-size: 60px;
+            font-family: arial;
+        }
+
+        ul {
+            list-style: none;
+            padding: 30px 0 0 0;
+        }
+
+        li {
+            margin-bottom: 20px;
+            color:  gray;
+        }
+
+        .titulo {
+            font-weight: bold;
+            color:  black;
+            display: block;
+            padding-top: 60px !important;
+}
+
+        .erro {
+            background: rgba(0,0,0,0.2);
+            padding: 10px;
+        }
+                input {
+            font-size: 60px;
+        }
+        select {
+            font-size: 60px;
+            font-family: arial;
+        }
+</style>
+</head>
+<body>
+
+    <ul>
+        <li class="titulo">FEDERAÇÃO</li>
+        <li class="titulo">
+            <select id="estado" name="estado">
+                <option value="AC" selected="">ASSOCIAÇÕES</option>
+                <option>AMAI</option>
+                <option>AMAUC</option>
+                <option>AMUREL</option>
+                <option>AMEOSC</option>
+                <option>AMOSC</option>
+                <option>AMREC</option>
+                <option>AMARP</option>
+                <option>AMURES</option>
+                <option>AMPLANORTE</option>
+                <option>AMFRI</option>
+                <option>AMURC</option>
+                <option>AMMOC</option>
+                <option>AMPLASC</option>
+                <option>AMNOROESTE</option>
+                <option>AMERIOS</option>
+                <option>AMESC</option>
+                <option>AMMVI</option>
+                <option>AMUNESC</option>
+                <option>AMVALI</option>
+                <option>AMAI</option>
+                <option>AMAUC</option>
+                <option>AMUREL</option>
+            </select>
+        </li>
+        <li class="titulo">
+            <select>
+                <option selected>CONSÓRCIOS</option>
+                <option>LAMBARI</option>
+                <option>CIS-AMAUC</option>
+                <option>CIS-AMUREL</option>
+                <option>CIS-AMEOSC</option>
+                <option>CIS-AMOSC</option>
+                <option>CIDEMA</option>
+                <option>CIS-AMARP</option>
+                <option>CIS-AMURES</option>
+                <option>CIS-AMPLANORTE</option>
+                <option>CIS-AMFRI</option>
+                <option>GOLARGE</option>
+                <option>CIS-AMMOC</option>
+                <option>CIS-AMPLASC</option>
+                <option>CIS-AMNOROESTE</option>
+                <option>CIS-AMERIOS</option>
+                <option>CIMCATARINA</option>
+                <option>CIS-AMMVI</option>
+                <option>CIGA</option>
+                <option>CIS-AMVALI</option>
+                            <option>CIS-AMAI</option>
+                <option>CIS-AMAUC</option>
+                <option>CIS-AMUREL</option>
+                <option>CIS-AMEOSC</option>
+                <option>CIS-AMOSC</option>
+                <option>CIS-AMREC</option>
+                <option>JOANESBURGO</option>
+                <option>CIS-AMURES</option>
+                <option>CIS-AMPLANORTE</option>
+                <option>CIS-AMFRI</option>
+                <option>CIS-AMURC</option>
+                <option>TRINCA</option>
+                <option>CIS-AMPLASC</option>
+                <option>CIS-AMNOROESTE</option>
+                <option>CIS-AMERIOS</option>
+                <option>VALETE</option>
+                <option>CIS-AMMVI</option>
+                <option>CIS-AMUNESC</option>
+                <option>CIS-REIS</option>
+                            <option>CIS-AMAI</option>
+                <option>CIS-AMAUC</option>
+                <option>CIS-AMUREL</option>
+                <option>CIS-AMEOSC</option>
+                <option>CIS-AMOSC</option>
+                <option>CIS-AMREC</option>
+                <option>CIS-AMARP</option>
+                <option>CIS-AMURES</option>
+                <option>CIS-AMPLANORTE</option>
+                <option>CIS-AMFRI</option>
+                <option>CIS-AMURC</option>
+                <option>CIS-AMMOC</option>
+                <option>CIS-AMPLASC</option>
+                <option>CONSORCIO DO OESTE</option>
+                <option>CIS-AMERIOS</option>
+                <option>CIS-AMESC</option>
+                <option>CIS-AMMVI</option>
+                <option>CONSORCIO DE ITAJUBAUM</option>
+                <option>CIS-AMVALI</option>
+            </select>
+        </li>
+        <li class="titulo">
+            <select>
+                <option selected>MUNICIPIOS</option>
+                <option>Abdon Batista</option>
+                <option>Abelardo Luz</option>
+                <option>Agrolandia</option>
+                <option>Agronomica</option>
+                <option>Agua Doce</option>
+                <option>Aguas Frias</option>
+                <option>Aguas Mornas</option>
+                <option>Aguas de Chapeco</option>
+                <option>Alfredo Wagner</option>
+                <option>Alto Bela Vista</option>
+                <option>Anchieta</option>
+                <option>Angelina</option>
+                <option>Anita Garibaldi</option>
+                <option>Anitapolis</option>
+                <option>Antonio Carlos</option>
+                <option>Apiuna</option>
+                <option>Arabuta</option>
+                <option>Araquari</option>
+                <option>Ararangua</option>
+                <option>Armazem</option>
+                <option>Arroio Trinta</option>
+                <option>Arvoredo</option>
+                <option>Ascurra</option>
+                <option>Atalanta</option>
+                <option>Aurora</option>
+                <option>Balneario Arroio do Silva</option>
+                <option>Balneario Barra do Sul</option>
+                <option>Balneario Camboriu</option>
+                <option>Balneario Gaivota</option>
+                <option>Bandeirante</option>
+                <option>Barra Bonita</option>
+                <option>Barra Velha</option>
+                <option>Bela Vista do Toldo</option>
+                <option>Belmonte</option>
+                <option>Benedito Novo</option>
+                <option>Biguacu</option>
+                <option>Blumenau</option>
+                <option>Bocaina do Sul</option>
+                <option>Bom Jardim da Serra</option>
+                <option>Bom Jesus do Oeste</option>
+                <option>Bom Jesus</option>
+                <option>Bom Retiro</option>
+                <option>Bombinhas</option>
+                <option>Botuvera</option>
+                <option>Braco do Norte</option>
+                <option>Braco do Trombudo</option>
+                <option>Brunopolis</option>
+                <option>Brusque</option>
+                <option>Cacador</option>
+                <option>Caibi</option>
+                <option>Calmon</option>
+                <option>Camboriu</option>
+                <option>Campo Alegre</option>
+                <option>Campo Belo do Sul</option>
+                <option>Campo Ere</option>
+                <option>Campos Novos</option>
+                <option>Canelinha</option>
+                <option>Canoinhas</option>
+                <option>Capao Alto</option>
+                <option>Capinzal</option>
+                <option>Capivari de Baixo</option>
+                <option>Catanduvas</option>
+                <option>Caxambu do Sul</option>
+                <option>Celso Ramos</option>
+                <option>Cerro Negro</option>
+                <option>Chapadao do Lageado</option>
+                <option>Chapeco</option>
+                <option>Cocal do Sul</option>
+                <option>Concordia</option>
+                <option>Cordilheira Alta</option>
+                <option>Coronel Freitas</option>
+                <option>Coronel Martins</option>
+                <option>Correia Pinto</option>
+                <option>Corupa</option>
+                <option>Criciuma</option>
+                <option>Cunha Pora</option>
+                <option>Cunhatai</option>
+                <option>Curitibanos</option>
+                <option>Descanso</option>
+                <option>Dionisio Cerqueira</option>
+                <option>Dona Emma</option>
+                <option>Doutor Pedrinho</option>
+                <option>Entre Rios</option>
+                <option>Ermo</option>
+                <option>Erval Velho</option>
+                <option>Faxinal dos Guedes</option>
+                <option>Flor do Sertao</option>
+                <option>Florianopolis</option>
+                <option>Formosa do Sul</option>
+                <option>Forquilhinha</option>
+                <option>Fraiburgo</option>
+                <option>Frei Rogerio</option>
+                <option>Galvao</option>
+                <option>Garopaba</option>
+                <option>Garuva</option>
+                <option>Gaspar</option>
+                <option>Governador Celso Ramos</option>
+                <option>Grao Para</option>
+                <option>Gravatal</option>
+                <option>Guabiruba</option>
+                <option>Guaraciaba</option>
+                <option>Guaramirim</option>
+                <option>Guaruja do Sul</option>
+                <option>Guatambu</option>
+                <option>Herval d'Oeste</option>
+                <option>Ibiam</option>
+                <option>Ibicare</option>
+                <option>Ibirama</option>
+                <option>Icara</option>
+                <option>Ilhota</option>
+                <option>Imarui</option>
+                <option>Imbituba</option>
+                <option>Imbuia</option>
+                <option>Indaial</option>
+                <option>Iomere</option>
+                <option>Ipira</option>
+                <option>Ipora do Oeste</option>
+                <option>Ipuacu</option>
+                <option>Ipumirim</option>
+                <option>Iraceminha</option>
+                <option>Irani</option>
+                <option>Irati</option>
+                <option>Irineopolis</option>
+                <option>Ita</option>
+                <option>Itaiopolis</option>
+                <option>Itajai</option>
+                <option>Itapema</option>
+                <option>Itapiranga</option>
+                <option>Itapoa</option>
+                <option>Ituporanga</option>
+                <option>Jabora</option>
+                <option>Jacinto Machado</option>
+                <option>Jaguaruna</option>
+                <option>Jaragua do Sul</option>
+                <option>Jardinopolis</option>
+                <option>Joacaba</option>
+                <option>Joinville</option>
+                <option>Jose Boiteux</option>
+                <option>Jupia</option>
+                <option>Lacerdopolis</option>
+                <option>Lages</option>
+                <option>Laguna</option>
+                <option>Lajeado Grande</option>
+                <option>Laurentino</option>
+                <option>Lauro Muller</option>
+                <option>Lebon Regis</option>
+                <option>Leoberto Leal</option>
+                <option>Lindoia do Sul</option>
+                <option>Lontras</option>
+                <option>Luiz Alves</option>
+                <option>Luzerna</option>
+                <option>Macieira</option>
+                <option>Mafra</option>
+                <option>Major Gercino</option>
+                <option>Major Vieira</option>
+                <option>Maracaja</option>
+                <option>Maravilha</option>
+                <option>Marema</option>
+                <option>Massaranduba</option>
+                <option>Matos Costa</option>
+                <option>Meleiro</option>
+                <option>Mirim Doce</option>
+                <option>Modelo</option>
+                <option>Mondai</option>
+                <option>Monte Carlo</option>
+                <option>Monte Castelo</option>
+                <option>Morro Grande</option>
+                <option>Morro da Fumaca</option>
+                <option>Navegantes</option>
+                <option>Nova Erechim</option>
+                <option>Nova Itaberaba</option>
+                <option>Nova Trento</option>
+                <option>Nova Veneza</option>
+                <option>Novo Horizonte</option>
+                <option>Orleans</option>
+                <option>Otacilio Costa</option>
+                <option>Ouro Verde</option>
+                <option>Ouro</option>
+                <option>Paial</option>
+                <option>Painel</option>
+                <option>Palhoca</option>
+                <option>Palma Sola</option>
+                <option>Palmeira</option>
+                <option>Palmitos</option>
+                <option>Papanduva</option>
+                <option>Paraiso</option>
+                <option>Passo de Torres</option>
+                <option>Passos Maia</option>
+                <option>Paulo Lopes</option>
+                <option>Pedras Grandes</option>
+                <option>Penha</option>
+                <option>Peritiba</option>
+                <option>Petrolandia</option>
+                <option>Picarras</option>
+                <option>Pinhalzinho</option>
+                <option>Pinheiro Preto</option>
+                <option>Piratuba</option>
+                <option>Planalto Alegre</option>
+                <option>Pomerode</option>
+                <option>Ponte Alta do Norte</option>
+                <option>Ponte Alta</option>
+                <option>Ponte Serrada</option>
+                <option>Porto Belo</option>
+                <option>Porto Uniao</option>
+                <option>Pouso Redondo</option>
+                <option>Praia Grande</option>
+                <option>Presidente Castelo Branco</option>
+                <option>Presidente Getulio</option>
+                <option>Presidente Nereu</option>
+                <option>Princesa</option>
+                <option>Quilombo</option>
+                <option>Rancho Queimado</option>
+                <option>Rio Fortuna</option>
+                <option>Rio Negrinho</option>
+                <option>Rio Rufino</option>
+                <option>Rio d'Oeste</option>
+                <option>Rio das Antas</option>
+                <option>Rio do Campo</option>
+                <option>Rio do Sul</option>
+                <option>Rio dos Cedros</option>
+                <option>Riqueza</option>
+                <option>Rodeio</option>
+                <option>Romelandia</option>
+                <option>Salete</option>
+                <option>Saltinho</option>
+                <option>Salto Veloso</option>
+                <option>Sangao</option>
+                <option>Santa Cecilia</option>
+                <option>Santa Helena</option>
+                <option>Santa Rosa de Lima</option>
+                <option>Santa Rosa do Sul</option>
+                <option>Santa Terezinha do Progresso</option>
+                <option>Santa Terezinha</option>
+                <option>Santiago do Sul</option>
+                <option>Santo Amaro da Imperatriz</option>
+                <option>Sao Bento do Sul</option>
+                <option>Sao Bernardino</option>
+                <option>Sao Bonifacio</option>
+                <option>Sao Carlos</option>
+                <option>Sao Cristovao do Sul</option>
+                <option>Sao Domingos</option>
+                <option>Sao Francisco do Sul</option>
+                <option>Sao Joao Batista</option>
+                <option>Sao Joao do Itaperiu</option>
+                <option>Sao Joao do Oeste</option>
+                <option>Sao Joao do Sul</option>
+                <option>Sao Joaquim</option>
+                <option>Sao Jose do Cedro</option>
+                <option>Sao Jose do Cerrito</option>
+                <option>Sao Jose</option>
+                <option>Sao Lourenco d'Oeste</option>
+                <option>Sao Ludgero</option>
+                <option>Sao Martinho</option>
+                <option>Sao Miguel d'Oeste</option>
+                <option>Sao Miguel da Boa Vista</option>
+                <option>Sao Pedro de Alcantara</option>
+                <option>Saudades</option>
+                <option>Schroeder</option>
+                <option>Seara</option>
+                <option>Serra Alta</option>
+                <option>Sideropolis</option>
+                <option>Sombrio</option>
+                <option>Sul Brasil</option>
+                <option>Taio</option>
+                <option>Tangara</option>
+                <option>Tigrinhos</option>
+                <option>Tijucas</option>
+                <option>Timbe do Sul</option>
+                <option>Timbo Grande</option>
+                <option>Timbo</option>
+                <option>Tres Barras</option>
+                <option>Treviso</option>
+                <option>Treze Tilias</option>
+                <option>Treze de Maio</option>
+                <option>Trombudo Central</option>
+                <option>Tubarao</option>
+                <option>Tunapolis</option>
+                <option>Turvo</option>
+                <option>Uniao do Oeste</option>
+                <option>Urubici</option>
+                <option>Urupema</option>
+                <option>Urussanga</option>
+                <option>Vargeao</option>
+                <option>Vargem Bonita</option>
+                <option>Vargem</option>
+                <option>Vidal Ramos</option>
+                <option>Videira</option>
+                <option>Vitor Meireles</option>
+                <option>Witmarsum</option>
+                <option>Xanxere</option>
+                <option>Xavantina</option>
+                <option>Xaxim</option>
+                <option>Zortea</option>
+            </select>
+        </li>
+        <li class="titulo">CIGA</li>
+        <li class="titulo">EGEM</li>
+        <li class="titulo">ARIS</li>
+        <li class="titulo">CIMCATARINA</li>
+    </ul>
+
+    
+    
+    
+    <br><br><br>
+    <a href="busca.html">com busca</a>
+</body>
+</html>
